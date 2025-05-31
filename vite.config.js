@@ -3,12 +3,14 @@ import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
+import { name } from './package.json';
 
 export default defineConfig(({ command }) => {
   return {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
+    base: command==='build' ? `/${name}/`:'/',
     root: 'src',
     build: {
       sourcemap: true,

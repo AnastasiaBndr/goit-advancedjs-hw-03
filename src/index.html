@@ -6,7 +6,7 @@
       href="./img/favicon.ico"
       rel="icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goit Adwanced JS HW 02</title>
+    <title>Goit Adwanced JS HW 03</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -14,12 +14,20 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main class="main-page">
+    <main>
       <div class="container">
-          <a href="./1-timer.html" class="navigation-link">Timer</a>
-          <a href="./2-snackbar.html" class="navigation-link">Snackbar</a>
+        <form action="">
+            <input class="search-form" type="text" placeholder="search image">
+            <button type="submit">Search</button>
+        </form>
+        <span class="loader"></span>
+        <div class="gallery-container">
+          <ul class="gallery">
+          </ul>
+        </div>
       </div>
       
     </main>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
